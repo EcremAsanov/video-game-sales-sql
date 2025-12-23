@@ -1,3 +1,4 @@
+
 \# Video Game Sales Analysis (SQL Server)
 
 
@@ -166,3 +167,6 @@ Sales data is mock data created for learning and portfolio purposes.
 
 
 
+=======
+# video-game-sales-sql
+SQL Server database project for video game sales analysis
