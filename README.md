@@ -159,6 +159,28 @@ The dataset focuses on a curated selection of SEGA Dreamcast, Nintendo GameCube,
 
 ---
 
+## Power BI Dashboard
+
+This project includes a Power BI dashboard built on top of the SQL Server database to visualize key sales insights.
+
+The dashboard highlights:
+- Total global sales by platform
+- Average global sales by genre
+- Top 10 games by global sales
+
+### Dashboard Overview
+![Dashboard Overview](docs/dashboard_overview.png)
+
+### Total Global Sales by Platform
+![Platform Sales](docs/platform_sales.png)
+
+### Average Global Sales by Genre
+![Genre Average Sales](docs/genre_avg_sales.png)
+
+### Top 10 Games by Global Sales
+![Top 10 Games](docs/top10_games.png)
+
+---
 
 
 \## Notes
