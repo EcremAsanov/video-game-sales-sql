@@ -61,20 +61,20 @@ This project demonstrates SQL database design, relational modeling, and business
 
 ## Dashboard Preview
 
-![Dashboard Overview](Video_Game_Sales.jpg)
+![Dashboard Overview](./Video_Game_Sales.jpg)
 
 ---
 
 ## Power BI Visuals
 
 ### Total Global Sales by Platform
-![Platform Sales](Platform_Sales.jpg)
+![Platform Sales](./Platform_Sales.jpg)
 
 ### Average Global Sales by Genre
-![Genre Average Sales](Genre_AVG_Sales.jpg)
+![Genre Average Sales](./Genre_AVG_Sales.jpg)
 
 ### Top 10 Games by Global Sales
-![Top 10 Games](Top10_Games.jpg)
+![Top 10 Games](./Top10_Games.jpg)
 
 ---
 
