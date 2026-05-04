@@ -1,194 +1,104 @@
+# Video Game Sales SQL Analysis Project
 
-\# Video Game Sales Analysis (SQL Server)
-
-
-
-This project demonstrates core SQL fundamentals by designing and querying a relational database from scratch using SQL Server.
-
-
-
-The dataset focuses on a curated selection of SEGA Dreamcast, Nintendo GameCube, and PlayStation 2 games.
-
-
+## Overview
+This project demonstrates SQL database design, relational modeling, and business-style analysis using a video game sales dataset. The goal was to design a normalized SQL Server database, analyze global and regional video game sales, and visualize key sales insights in Power BI.
 
 ---
 
-
-
-\## Project Goals
-
-\- Design a normalized relational database
-
-\- Practice SQL fundamentals used in analyst roles
-
-\- Answer business-style questions using SQL
-
-\- Prepare the database for future Power BI visualization
-
-
+## Tools Used
+- SQL Server
+- SQL Server Management Studio (SSMS)
+- Power BI
+- Git & GitHub
 
 ---
 
-
-
-\## Database Schema
-
-
-
-\### Tables
-
-\- \*\*Platforms\*\*
-
-&nbsp; - PlatformID (PK)
-
-&nbsp; - PlatformName
-
-
-
-\- \*\*Genres\*\*
-
-&nbsp; - GenreID (PK)
-
-&nbsp; - GenreName
-
-
-
-\- \*\*Publishers\*\*
-
-&nbsp; - PublisherID (PK)
-
-&nbsp; - PublisherName
-
-
-
-\- \*\*Games\*\*
-
-&nbsp; - GameID (PK)
-
-&nbsp; - GameName
-
-&nbsp; - YearOfRelease
-
-&nbsp; - PlatformID (FK)
-
-&nbsp; - GenreID (FK)
-
-&nbsp; - PublisherID (FK, nullable)
-
-
-
-\- \*\*Sales\*\*
-
-&nbsp; - SalesID (PK)
-
-&nbsp; - GameID (FK, UNIQUE)
-
-&nbsp; - NA\_Sales
-
-&nbsp; - EU\_Sales
-
-&nbsp; - JP\_Sales
-
-&nbsp; - Other\_Sales
-
-&nbsp; - Global\_Sales
-
-
+## Project Goals
+- Design a normalized relational database
+- Create tables with primary keys and foreign keys
+- Analyze sales performance by platform, genre, publisher, and game
+- Practice SQL concepts used in real analyst roles
+- Build Power BI visuals to summarize key insights
 
 ---
 
+## Database Schema
 
+### Tables
+- **Games**
+- **Platforms**
+- **Genres**
+- **Publishers**
+- **Sales**
 
-\## Relationships
-
-\- Platforms → Games (1-to-many)
-
-\- Genres → Games (1-to-many)
-
-\- Publishers → Games (1-to-many, optional)
-
-\- Games → Sales (1-to-1)
-
-
-
----
-
-
-
-\## SQL Concepts Demonstrated
-
-\- SELECT, WHERE, ORDER BY, TOP
-
-\- INNER JOIN, LEFT JOIN, RIGHT JOIN
-
-\- GROUP BY, HAVING
-
-\- Aggregate functions (SUM, AVG, COUNT)
-
-\- Pagination using OFFSET / FETCH
-
-
+### Relationships
+- Platforms → Games
+- Genres → Games
+- Publishers → Games
+- Games → Sales
 
 ---
 
-
-
-\## How to Run This Project (SSMS)
-
-1\. Run `sql/01\_create\_schema.sql`
-
-2\. Run `sql/02\_insert\_seed\_data.sql`
-
-3\. Run `sql/03\_analysis\_queries.sql`
-
-
-
----
-
-
-
-\## Tools Used
-
-\- SQL Server
-
-\- SQL Server Management Studio (SSMS)
-
-\- Git \& GitHub
-
-
-
----
-
-## Power BI Dashboard
-
-This project includes a Power BI dashboard built on top of the SQL Server database to visualize key sales insights.
-
-The dashboard highlights:
+## Key Analysis Performed
 - Total global sales by platform
 - Average global sales by genre
 - Top 10 games by global sales
-
-### Dashboard Overview
-![Dashboard Overview](docs/dashboard_overview.png)
-
-### Total Global Sales by Platform
-![Platform Sales](docs/platform_sales.png)
-
-### Average Global Sales by Genre
-![Genre Average Sales](docs/genre_avg_sales.png)
-
-### Top 10 Games by Global Sales
-![Top 10 Games](docs/top10_games.png)
+- Sales breakdown by region
+- Publisher and genre performance analysis
 
 ---
 
+## SQL Skills Demonstrated
+- SELECT, WHERE, ORDER BY
+- INNER JOIN, LEFT JOIN, RIGHT JOIN
+- GROUP BY and HAVING
+- Aggregate functions: SUM, AVG, COUNT
+- Pagination using OFFSET / FETCH
+- Relational database design
+- Primary keys and foreign keys
 
-\## Notes
+---
 
-Sales data is mock data created for learning and portfolio purposes.
+## Dashboard Preview
 
+![Dashboard Overview](Video_Game_Sales.jpg)
 
+---
 
-=======
-# video-game-sales-sql
-SQL Server database project for video game sales analysis
+## Power BI Visuals
+
+### Total Global Sales by Platform
+![Platform Sales](Platform_Sales.jpg)
+
+### Average Global Sales by Genre
+![Genre Average Sales](Genre_AVG_Sales.jpg)
+
+### Top 10 Games by Global Sales
+![Top 10 Games](Top10_Games.jpg)
+
+---
+
+## Project Files
+- `01_create_schema.sql` → Creates database tables and relationships
+- `02_insert_seed_data.sql` → Inserts sample video game sales data
+- `03_analysis_queries.sql` → SQL analysis queries
+- `Video_Game_Sales.pbix` → Power BI dashboard
+- `Video_Game_Sales.jpg` → Dashboard overview image
+- `Platform_Sales.jpg` → Platform sales visual
+- `Genre_AVG_Sales.jpg` → Genre sales visual
+- `Top10_Games.jpg` → Top 10 games visual
+
+---
+
+## Key Skills Demonstrated
+- SQL database design
+- SQL querying and analysis
+- Data aggregation
+- Relational joins
+- Power BI dashboarding
+- Business insight reporting
+
+---
+
+## Notes
+This project uses mock video game sales data created for learning and portfolio purposes.
