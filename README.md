@@ -99,6 +99,3 @@ This project demonstrates SQL database design, relational modeling, and business
 - Business insight reporting
 
 ---
-
-## Notes
-This project uses mock video game sales data created for learning and portfolio purposes.
